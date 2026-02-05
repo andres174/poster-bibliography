@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliografía - Poster Científico</title>
+    <style>
+        :root {
+            --page-bg: #f2f2f2;
+            --paper-bg: #ffffff;
+            --ink: #1f2937;
+            --muted: #6b7280;
+            --rule: #e5e7eb;
+            --accent: #0f766e;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            --font: "Times New Roman", Times, serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--page-bg);
+            color: var(--ink);
+            font-family: var(--font);
+        }
+
+        .page-wrap {
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 32px 16px 56px;
+        }
+
+        .paper {
+            width: min(210mm, 100%);
+            background: var(--paper-bg);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--rule);
+            padding: 28mm 25mm 30mm;
+            position: relative;
+        }
+
+        .paper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, rgba(15, 118, 110, 0.08), rgba(15, 118, 110, 0));
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        header h1 {
+            font-size: 20pt;
+            letter-spacing: 0.3px;
+            margin: 0 0 6px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 11pt;
+            color: var(--muted);
+        }
+
+        .rule {
+            height: 1px;
+            background: var(--rule);
+            margin: 18px 0 24px;
+        }
+
+        .apa-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 12pt;
+            line-height: 2;
+        }
+
+        .apa-item {
+            padding-left: 36px;
+            text-indent: -36px;
+            margin-bottom: 10px;
+        }
+
+        .apa-item a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .apa-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 28px;
+            font-size: 10.5pt;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--rule);
+            padding-top: 12px;
+        }
+
+        @media (max-width: 720px) {
+            .paper {
+                padding: 22mm 16mm 24mm;
+            }
+
+            header h1 {
+                font-size: 18pt;
+            }
+
+            .apa-list {
+                font-size: 11pt;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-wrap {
+                padding: 16px 8px 32px;
+            }
+
+            .paper {
+                padding: 18mm 12mm 22mm;
+            }
+
+            header h1 {
+                font-size: 16pt;
+            }
+
+            .apa-item {
+                padding-left: 28px;
+                text-indent: -28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <main class="paper" role="main">
+            <header>
+                <h1>BIBLIOGRAFÍA</h1>
+            </header>
+
+            <div class="rule"></div>
+
+            <ol class="apa-list">
+                <li class="apa-item">Abedon, S. T. (2025). Terapia con fagos: Combatir la evolución de la resistencia bacteriana a los fagos. <em>Viruses, 17</em>(8), 1094. <a href="https://doi.org/10.3390/v17081094">https://doi.org/10.3390/v17081094</a></li>
+                <li class="apa-item">(2024). Antimicrobial resistance: use of phage therapy in the management of resistant infections. <em>Pathogens and Global Health</em>. Obtenido de <a href="https://pubmed.ncbi.nlm.nih.gov/39167154/">https://pubmed.ncbi.nlm.nih.gov/39167154/</a></li>
+                <li class="apa-item">(2023). Fagoterapia: una alternativa emergente en la era de la multirresistencia antibiótica. <em>Actualizaciones en Sida e Infectología, 31</em>(112). <a href="https://doi.org/10.52226/revista.v31i112.123">https://doi.org/10.52226/revista.v31i112.123</a></li>
+                <li class="apa-item">Mayorga-Morales, D. C.-l.-T.-F. (2025). Importancia de la terapia de bacteriófagos en infecciones bacterianas multirresistentes. <em>MQRInvestigar</em>. <a href="https://doi.org/10.56048/MQR20225.9.2.2025.e579">https://doi.org/10.56048/MQR20225.9.2.2025.e579</a></li>
+                <li class="apa-item">pathogens, P. t.-r. (2024). <em>Journal of Clinical Microbiology</em>. Obtenido de <a href="https://pubmed.ncbi.nlm.nih.gov/39355200/">https://pubmed.ncbi.nlm.nih.gov/39355200/</a></li>
+                <li class="apa-item">Pinta-Riofrio, M. D.-E.-J.-M. (2025). Fagoterapia frente a bacterias multirresistentes. <em>Revista Arbitrada Interdisciplinaria de Ciencias de la Salud</em>. <a href="https://doi.org/10.35381/s.v.v8i1.3919">https://doi.org/10.35381/s.v.v8i1.3919</a></li>
+                <li class="apa-item">review, E. o.-r. (2024). <em>Journal of Advances in Medicine and Medical Research</em>. Obtenido de <a href="https://journaljammr.com/index.php/JAMMR/article/view/5289">https://journaljammr.com/index.php/JAMMR/article/view/5289</a></li>
+                <li class="apa-item">review, P. T. (2023). <em>International Journal of Molecular Sciences, 23</em>(9), 4577. <a href="https://doi.org/10.3390/ijms23094577">https://doi.org/10.3390/ijms23094577</a></li>
+            </ol>
+
+            <footer>
+                <span>Última actualización: febrero 2026</span>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
